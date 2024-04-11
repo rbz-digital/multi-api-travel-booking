@@ -1,4 +1,77 @@
-/**
- * All of the CSS for your public-facing functionality should be
- * included in this file.
- */
+#travel-booking-form {
+    display: flex;
+}
+
+#travel-booking-form button {
+    flex: auto;
+    display: flex;
+    outline: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#travel-booking-form button:not(.search) {
+    justify-content: space-between;
+    background-color: transparent;
+    background-image: url(../img/down.svg);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: top 10px right 16px;
+}
+
+#travel-booking-form button.search {
+    justify-content: center;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+}
+
+#travel-booking-form button:active {
+    outline: none;
+}
+
+.menus {
+    position: relative;
+}
+
+.travel-booking-opt {
+    position: absolute;
+    top: 0;
+    display: none;
+    padding: 8px;
+    background-color: white;
+    font-size: 13px;
+    box-shadow: 0 0 8px rgba(0,0,0,.1);
+}
+
+.travel-booking-opt ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.full {
+    width: 100%;
+}
+
+#opt-departure-location, 
+#opt-nights-at-destination {
+    width: 150px;
+}
+
+#opt-nights-at-destination input {
+    width: 100%;
+}
+
+#opt-nights-at-destination input[type="number"] {
+    width: calc( 100% - 8px );
+    outline: none;
+    margin-bottom: 8px;
+}
+
+#opt-departure-date {
+    display: block;
+    width: 512px;
+    height: 440px;
+}

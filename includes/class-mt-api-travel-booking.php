@@ -173,6 +173,8 @@ class Mt_Api_Travel_Booking {
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 
+		$this->loader->add_shortcode( 'display-search-form', $plugin_public, 'display_search_form_shortcode' );
+
 	}
 
 	/**
